@@ -13,6 +13,17 @@
         ]
     },
     {
+        "id": 1,
+        "name": "Hackspace",
+        "desc": "The sound of the lazer cutter and Oliver is shouting 'WHY WONT MY FUCKING RECEPIT PRINTER WORK!?'.",
+        "paths":
+        [
+            { "id": 0, "name": "Talk to Oliver", "desc": "Oliver gets enraged and smashes the printer on the floor. Bits of srapnell hit you in the face. You are in pain. That was not a safe decision.", "point_change": -50},
+            { "id": 1, "name": "Talk to James", "desc": "You talk to James. He tells you, in a stern voice, 'dont plug that power supply in.'"},
+            { "id": 2, "name": "3D print cutlery", "desc": "You spend hours upon hours 3D printing some cutlery. Ian Hoyler finds you slumped in a chair whilst slowly going insane..."}
+        ]
+    },
+    {
         "id": 2,
         "name": "Upper Atrium",
         "desc": "There are stressed students on several coloured sofas in this vast, open plain.",
