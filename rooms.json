@@ -1,0 +1,13 @@
+[
+    {
+        "id": 0,
+        "name": "MVB 2.11",
+        "desc": "Your vision is filled with an array of monitors, desktops, and flesh. At this time in particular, first-year computer science students are having a C lab - the room is packed.",
+        "paths": 
+        [
+            { "id": 0, "name": "Talk to a TA", "desc": "You talk to a TA, who promptly tells you to go away.", "point_change": -1 },
+            { "id": 1, "name": "Turn on a computer", "desc": "You turn on a computer and type in your username, but you've forgotten your password. What do you guess?", "links_to": [] },
+            { "id": 2, "name": "dog123", "desc": "The screen flashes red.", "links_to": [1] }
+        ]
+    }
+]
