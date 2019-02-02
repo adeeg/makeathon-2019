@@ -19,7 +19,7 @@
         "paths":
         [
             { "id": 0, "name": "Talk to Oliver", "desc": "Oliver gets enraged and smashes the printer on the floor. Bits of srapnell hit you in the face. You are in pain. That was not a safe decision.", "point_change": -50},
-            { "id": 1, "name": "Talk to James", "desc": "You talk to James. He tells you, in a stern voice, 'dont plug that power supply in.'"},
+            { "id": 1, "name": "Talk to James", "desc": "You talk to James. He tells you, in a stern voice, 'don't plug that power supply in.'"},
             { "id": 2, "name": "3D print cutlery", "desc": "You spend hours upon hours 3D printing some cutlery. Ian Hoyler finds you slumped in a chair whilst slowly going insane..."}
         ]
     },
@@ -37,5 +37,9 @@
         [
             { "id": 0, "name": "", "desc": "David May stops to have a chat with you about the Computer Architecture Computer. You waste 5 hours of time.", "point_change": -150 }
         ]
-    }
+    },
+    {
+        "id": 3,
+        "name": "3.33",
+        "desc": "You knock on the door once. You hear a packet of crips slowly being eaten. A soft voice tells you to 'come in'. You enter. You see Cian in front of you with his Macbook eating crips. What a beautiful man"
 ]
