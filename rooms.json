@@ -8,7 +8,19 @@
             { "id": 1, "name": "Talk to a TA", "desc": "You talk to a TA, who promptly tells you to go away.", "point_change": -1 },
             { "id": 2, "name": "Turn on a computer", "desc": "You turn on a computer and type in your username, but you've forgotten your password. What do you guess?", "links_to": [3, 4] },
             { "id": 3, "name": "dog123", "desc": "The screen flashes red. You got it wrong!", "links_from": [2], "links_to": [2] },
-            { "id": 4, "name": "ilovesnowy", "desc": "You've logged in!", "links_from": [2] }
+            { "id": 4, "name": "ilovesnowy", "desc": "You've logged in!", "links_from": [2] },
+            { "id": 5, "name": "Enter the Upper Atrium", "desc": "You enter the Upper Atrium.", "room_to": 2 }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Upper Atrium",
+        "desc": "There are stressed students on several coloured sofas in this vast, open plain.",
+        "paths":
+        [
+            { "id": 1, "name": "Sit on a sofa", "desc": "You sit down on a sofa and try to do some coursework with your friends. You end up talking to your friends for too long and don't get much accomplished.", "point_change": -40 },
+            { "id": 2, "name": "Walk to the Lower Atrium", "desc": "" },
+            { "id": 3, "name": "Enter MVB 2.11", "desc": "You enter MVB 2.11.", "room_to": 0 }
         ]
     }
 ]
