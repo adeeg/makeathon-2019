@@ -1,4 +1,5 @@
 import json
+import random
 
 class Player():
     def __init__(self):
@@ -8,7 +9,13 @@ class Player():
         self.nextLinked = None
     
     def choosePath(self, choiceNum):
+        #if random.randint(0,1):
         path = rooms[self.current_room].paths[choiceNum]
+        if self.getCurrentRoom().rand_enc and random.random() > 0.7:
+            # random enc.
+            num = random.randint(0, len(self.getCurrentRoom().rand_enc) - 1)
+            path = self.getCurrentRoom().rand_enc[num]
+        
         print(path.desc)
         self.current_room = path.room_to
         self.score += path.point_change
@@ -19,6 +26,9 @@ class Player():
         elif path.point_change < 0:
             print('You lost {} points'.format(path.point_change))
         self.items += path.items_earned
+    
+    def getCurrentRoom(self):
+        return rooms[self.current_room]
     
     def listPaths(self):
         for p in self.getPaths():
@@ -76,6 +86,7 @@ with open('rooms.json', 'r') as f:
         name = r['name']
         desc = r['desc']
         paths = r['paths']
+        rand_enc = saferDictGet(r, 'rand_enc', [])
 
         room = Room(id, name, desc)
 
@@ -92,6 +103,20 @@ with open('rooms.json', 'r') as f:
             path = Event(path_id, path_name, path_desc, point_change, room_to, links_to, links_from)
             #print(path)
             room.paths.append(path)
+        
+        for p in rand_enc:
+            # yes i am aware this is copy pasted sue me
+            path_id = p['id']
+            path_name = p['name']
+            path_desc = p['desc']
+
+            room_to = saferDictGet(p, 'room_to', room.id)
+            point_change = saferDictGet(p, 'point_change', 0)
+            links_from = saferDictGet(p, 'links_from', [])
+            links_to = saferDictGet(p, 'links_to', [])
+
+            path = Event(path_id, path_name, path_desc, point_change, room_to, links_to, links_from)
+            room.rand_enc.append(path)
 
         rooms[room.id] = room
 

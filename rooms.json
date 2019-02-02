@@ -21,6 +21,10 @@
             { "id": 1, "name": "Sit on a sofa", "desc": "You sit down on a sofa and try to do some coursework with your friends. You end up talking to your friends for too long and don't get much accomplished.", "point_change": -40 },
             { "id": 2, "name": "Walk to the Lower Atrium", "desc": "" },
             { "id": 3, "name": "Enter MVB 2.11", "desc": "You enter MVB 2.11.", "room_to": 0 }
+        ],
+        "rand_enc":
+        [
+            { "id": 0, "name": "", "desc": "David May stops to have a chat with you about the Computer Architecture Computer. You waste 5 hours of time.", "point_change": -150 }
         ]
     }
 ]
