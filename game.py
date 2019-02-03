@@ -62,13 +62,16 @@ with open('rooms.json', 'r') as f:
 # mvb11.addPathStay(Event('Look at floor', 'You look at the floor. Why?', -1))
 
 p = player.Player(rooms)
-serThread = Thread(target=ser.thread1, args=("Ser thead". ))
+serThread = Thread(target=ser.thread1, args=("Ser thead", ))
 serThread.start()
 
 while True:
     print ("===== {} =====".format(rooms[p.current_room].name))
     p.listPaths()
-    p.choosePath(int(input()))
+    while (ser.keyDown == None):
+        continue
+    p.choosePath(ser.keyDown)
+    print("Key selected:", ser.keyDown)
+    ser.keyDown = None
     print()
-    print("Test: {}".format(ser.keyDown))
 serThread.join()
