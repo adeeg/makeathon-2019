@@ -56,7 +56,7 @@
         "rand_enc":
         [
             { "id": 0, "name": "", "desc": "A class has just left MVB 1.11"},
-            { "id": 1, "name": "", "Simon Locke walks past you and has a joke with you. Your day has been made", "point_change": 25}
+            { "id": 1, "name": "", "desc": "Simon Locke walks past you and has a joke with you. Your day has been made", "point_change": 25}
         ]
     },
     {

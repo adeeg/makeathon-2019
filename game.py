@@ -63,6 +63,7 @@ with open('rooms.json', 'r') as f:
 
 p = player.Player(rooms)
 serThread = Thread(target=ser.thread1, args=("Ser thead". ))
+serThread.start()
 
 while True:
     print ("===== {} =====".format(rooms[p.current_room].name))
