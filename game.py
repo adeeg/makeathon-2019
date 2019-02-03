@@ -3,6 +3,8 @@ import random
 import player
 import event
 import room as roomFile
+import ser
+from threading import Thread
 
 # id -> room
 rooms = {}
@@ -60,9 +62,12 @@ with open('rooms.json', 'r') as f:
 # mvb11.addPathStay(Event('Look at floor', 'You look at the floor. Why?', -1))
 
 p = player.Player(rooms)
+serThread = Thread(target=ser.thread1, args=("Ser thead". ))
 
 while True:
     print ("===== {} =====".format(rooms[p.current_room].name))
     p.listPaths()
     p.choosePath(int(input()))
     print()
+    print("Test: {}".format(ser.keyDown))
+serThread.join()
