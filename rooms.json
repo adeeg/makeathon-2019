@@ -13,18 +13,57 @@
         ]
     },
     {
+        "id": 1,
+        "name": "Hackspace",
+        "desc": "The sound of the lazer cutter and Oliver is shouting 'WHY WONT MY FUCKING RECEPIT PRINTER WORK!?'.",
+        "paths":
+        [
+            { "id": 0, "name": "Talk to Oliver", "desc": "Oliver gets enraged and smashes the printer on the floor. Bits of srapnell hit you in the face. You are in pain. That was not a safe decision.", "point_change": -50},
+            { "id": 1, "name": "Talk to James", "desc": "You talk to James. He tells you, in a stern voice, 'don't plug that power supply in.'"},
+            { "id": 2, "name": "3D print cutlery", "desc": "You spend hours upon hours 3D printing some cutlery. Ian Hoyler finds you slumped in a chair whilst slowly going insane..."}
+        ]
+    },
+    {
         "id": 2,
         "name": "Upper Atrium",
         "desc": "There are stressed students on several coloured sofas in this vast, open plain.",
         "paths":
         [
             { "id": 1, "name": "Sit on a sofa", "desc": "You sit down on a sofa and try to do some coursework with your friends. You end up talking to your friends for too long and don't get much accomplished.", "point_change": -40 },
-            { "id": 2, "name": "Walk to the Lower Atrium", "desc": "" },
+            { "id": 2, "name": "Walk to the Lower Atrium", "desc": "", "room_to": 4},
             { "id": 3, "name": "Enter MVB 2.11", "desc": "You enter MVB 2.11.", "room_to": 0 }
         ],
         "rand_enc":
         [
-            { "id": 0, "name": "", "desc": "David May stops to have a chat with you about the Computer Architecture Computer. You waste 5 hours of time.", "point_change": -150 }
+            { "id": 0, "name": "", "desc": "David May stops to have a chat with you about the Computer Architecture Computer. You waste 5 hours of time.", "point_change": -150 },
+            { "id": 1, "name": "", "desc": "Nick Wu sees that you are struggling with Haskell and gives you private tuition", "point_change": 50},
+            { "id": 2, "name": "", "desc": "You see the BEEES commitee members advertising for the upcoming make-a-thon"}
         ]
+    },
+    {
+        "id": 4,
+        "name": "Lower Atrium",
+        "desc": "No one is playing table tennis",
+        "paths":
+        [
+            { "id": 1, "name": "Play table tennis", "desc": "You spend a good 5 minutes playing against your self. Wouldn't it be better if you had a friend?", "point_change": 1},
+            { "id": 2, "name": "Do some work", "desc": "You connect your laptop to the screen but end up just playing Minecraft. A person sits down next to you...", "links_to":[3,4]},
+            { "id": 3, "name": "Talk to them", "desc": "You talk to them. It turns out they don't have an OOP partner yet. You sign up as a pair", "point_change": 30},
+            { "id": 4, "name": "Walk away", "desc": "That was a bit rude. You might of missed out on a great friendship :'(", "point_change": -15},
+            { "id": 5, "name": "Enter the Hackspace", "desc": "You enter the Hackspace", "room_to": 1},
+            { "id": 6, "name": "Walk to the Upper Atrium", "desc": "", "desc": "", "room_to": 2}
+        ],
+        "rand_enc":
+        [
+            { "id": 0, "name": "", "desc": "A class has just left MVB 1.11"},
+            { "id": 1, "name": "", "desc": "Simon Locke walks past you and has a joke with you. Your day has been made", "point_change": 25}
+        ]
+    },
+    {
+        "id": 3,
+        "name": "3.33",
+        "desc": "You knock on the door once. You hear a packet of crips slowly being eaten. A soft voice tells you to 'come in'. You enter. You see Cian in front of you with his Macbook eating crips. What a beautiful man",
+        "paths":
+        []
     }
 ]
